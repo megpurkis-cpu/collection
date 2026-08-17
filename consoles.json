@@ -1,0 +1,107 @@
+[
+  {
+    "id": "xbox",
+    "name": "Xbox (Original)",
+    "active": true
+  },
+  {
+    "id": "xbox-360",
+    "name": "Xbox 360",
+    "active": true
+  },
+  {
+    "id": "xbox-one",
+    "name": "Xbox One",
+    "active": true
+  },
+  {
+    "id": "nes",
+    "name": "Nintendo NES",
+    "active": true
+  },
+  {
+    "id": "snes",
+    "name": "Super Nintendo",
+    "active": true
+  },
+  {
+    "id": "n64",
+    "name": "Nintendo 64",
+    "active": true
+  },
+  {
+    "id": "gamecube",
+    "name": "GameCube",
+    "active": true
+  },
+  {
+    "id": "wii",
+    "name": "Nintendo Wii",
+    "active": true
+  },
+  {
+    "id": "wii-u",
+    "name": "Wii U",
+    "active": true
+  },
+  {
+    "id": "gameboy",
+    "name": "Game Boy",
+    "active": true
+  },
+  {
+    "id": "gameboy-color",
+    "name": "Game Boy Color",
+    "active": true
+  },
+  {
+    "id": "gba",
+    "name": "Game Boy Advance",
+    "active": true
+  },
+  {
+    "id": "ds",
+    "name": "Nintendo DS",
+    "active": true
+  },
+  {
+    "id": "ps1",
+    "name": "PlayStation",
+    "active": true
+  },
+  {
+    "id": "ps2",
+    "name": "PlayStation 2",
+    "active": true
+  },
+  {
+    "id": "psp",
+    "name": "PSP",
+    "active": true
+  },
+  {
+    "id": "genesis",
+    "name": "Sega Mega Drive",
+    "active": true
+  },
+  {
+    "id": "master-system",
+    "name": "Sega Master System",
+    "active": true
+  },
+  {
+    "id": "game-gear",
+    "name": "Sega Game Gear",
+    "active": true
+  },
+  {
+    "id": "dreamcast",
+    "name": "Sega Dreamcast",
+    "active": true
+  },
+  {
+    "id": "atari-lynx",
+    "name": "Atari Lynx",
+    "active": true
+  }
+]
