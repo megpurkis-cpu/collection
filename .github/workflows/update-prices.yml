@@ -1,0 +1,38 @@
+name: Update CEX prices
+
+on:
+  schedule:
+    # Every Monday at 06:00 UTC. Change the cron expression to adjust
+    # frequency — e.g. "0 6 * * *" for daily.
+    - cron: '0 6 * * 1'
+  workflow_dispatch: {}   # lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update-prices:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Fetch current CEX prices
+        run: python3 scripts/update_prices.py
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet -- data/games.json; then
+            echo "No price changes."
+          else
+            git add data/games.json
+            git commit -m "Auto-update CEX prices"
+            git push
+          fi
